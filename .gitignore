@@ -1,0 +1,27 @@
+# Large video files, datasets, and textbooks (> 20MB)
+*.mp4
+*.mkv
+*.avi
+HW5/*.csv
+*.npy
+*.pdf
+
+# Compressed archives
+*.zip
+*.rar
+*.tar.gz
+*.7z
+
+# Python cache & checkpoints
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS and Editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
