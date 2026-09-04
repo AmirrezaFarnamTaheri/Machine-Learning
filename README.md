@@ -1,6 +1,6 @@
 # Machine Learning (Graduate Coursework)
 
-This repository contains problem sets, programming homeworks, practical notebooks, and the term project for the graduate-level **Machine Learning** course.
+This repository contains problem sets, empirical assignments, coding solutions, and the final term project for the graduate-level **Machine Learning** course.
 
 ---
 
@@ -8,43 +8,36 @@ This repository contains problem sets, programming homeworks, practical notebook
 
 ```text
 Machine-Learning/
-├── HW1/             # Linear regression, polynomial fitting, gradient descent algorithms
-├── HW2/             # Logistic regression, classification metrics (ROC/AUC), regularization (L1/L2)
-├── HW3/             # Support Vector Machines (SVM), kernel trick, decision boundaries
-├── HW4/             # Decision Trees, Random Forests, AdaBoost, Gradient Boosting Machines
-├── HW5/             # Unsupervised learning, k-Means clustering, PCA, Gaussian Mixture Models (GMM)
-├── HW6/             # Neural networks, backpropagation, Multi-Layer Perceptrons (MLP)
-├── Project/         # Term Project: Multi-class landscape classification & Real vs. Fake image detection
-│   ├── LS-train/    # Real vs. Fake training images
-│   ├── train/       # Landscape scene training images (jungle, mountain, sea)
-│   ├── Untitled.ipynb
-│   ├── Untitled-1.ipynb
-│   └── Machine Learning - Final Project.pdf
-└── handson-ml3/     # Companion code and notebook implementations based on Aurélien Géron (3rd Edition)
+├── HW1/          # Linear Regression, Ridge/Lasso, and Support Vector Machines (SVMs)
+├── HW2/          # Logistic Regression, k-NN, Naive Bayes, and Data Preprocessing
+├── HW3/          # Polynomial Regression, Regularization, and Gradient Descent Variants
+├── HW4/          # Decision Trees, Random Forests, Information Gain, and Pruning
+├── HW5/          # Ensemble Methods, Gradient Boosting, AdaBoost, and Bagging
+├── HW6/          # Unsupervised Learning, K-Means, PCA, Hierarchical Clustering, and t-SNE
+├── Project/      # Final Term Project:
+│   ├── Landscape_and_AI_Authenticity_Classification.ipynb  # Dual-objective CNN & Transfer Learning
+│   ├── Machine Learning - Final Project.pdf                # Project specification document
+│   ├── train/                                              # Ground-truth dataset (jungle, mountain, sea)
+│   └── README.md                                           # Project methodology & findings report
+└── handson-ml3/  # Reference implementation modules (Géron, 3rd Edition)
 ```
 
 ---
 
-## Core Topics Covered
+## Course Assignments Breakdown
 
-1. **Supervised Learning Fundamentals:**
-   - Linear and Ridge/Lasso/ElasticNet Regression, Normal Equations vs SGD.
-   - Logistic Regression, Cross-Entropy Loss, Precision, Recall, F1-score.
-2. **Support Vector Machines & Kernel Methods:**
-   - Maximum-margin hyperplanes, dual formulation, slack variables.
-   - Kernel trick: Linear, Polynomial, and Radial Basis Function (RBF) kernels.
-3. **Ensemble Learning & Tree-Based Methods:**
-   - Information gain, Gini impurity, CART algorithm.
-   - Bagging, Random Forests, Out-Of-Bag (OOB) evaluation.
-   - Boosting algorithms: AdaBoost, Gradient Tree Boosting (GBM), and XGBoost.
-4. **Dimensionality Reduction & Clustering:**
-   - Principal Component Analysis (PCA) and Singular Value Decomposition (SVD).
-   - k-Means, k-Means++, Silhouette analysis, DBSCAN, and Expectation-Maximization for GMMs.
-5. **Deep Learning Foundations:**
-   - Feedforward networks, activation functions (ReLU, GELU, LeakyReLU).
-   - Convolutional Neural Networks (CNNs) for image classification.
+- **HW1:** Statistical learning theory, bias-variance tradeoff, closed-form ordinary least squares vs. iterative gradient descent, support vector classifiers with linear and RBF kernels.
+- **HW2:** Probabilistic classifiers, Gaussian Naive Bayes, logistic regression with $L_1$ and $L_2$ penalties, k-Nearest Neighbors distance metrics, feature scaling and standardization.
+- **HW3:** Polynomial feature mapping, Ridge, Lasso, and ElasticNet regularizations, learning curves, and batch vs. stochastic gradient descent.
+- **HW4:** Non-parametric classification and regression trees, CART algorithm, Gini impurity vs. Shannon entropy, tree pruning, and decision boundary visualization.
+- **HW5:** Ensemble learning paradigms, bootstrap aggregation (Bagging), Random Forests with feature importance ranking, AdaBoost, and Gradient Tree Boosting.
+- **HW6:** Dimensionality reduction via Principal Component Analysis (PCA), singular value decomposition (SVD), K-Means clustering, and agglomerative hierarchical clustering.
 
 ---
 
-## Primary References
-- **Aurélien Géron** — *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems* (3rd Edition).
+## Final Project
+Located in [`Project/`](Project/):
+- **Objective 1:** Multi-class natural landscape classification (`jungle`, `mountain`, `sea`).
+- **Objective 2:** Authentic vs. AI-generated image discrimination (real photographs vs. Stable Diffusion / DALL-E outputs).
+- **Architectures:** Custom 8-layer deep CNN trained from scratch vs. pre-trained **ResNet-152V2** and **MobileNetV3-Large** transfer learning.
+- **Data Pipeline:** Single-pass tabular ingestion, dynamic horizontal flip/zoom/rotation augmentation, and stratified train/validation/test evaluation.

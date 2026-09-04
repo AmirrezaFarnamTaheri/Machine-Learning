@@ -1,10 +1,13 @@
-# Large video files, datasets, and textbooks (> 20MB)
+# Large video files, datasets, and external textbooks (> 20MB)
 *.mp4
 *.mkv
 *.avi
 HW5/*.csv
 *.npy
+
+# Exclude external textbook PDFs but keep assignment project sheet
 *.pdf
+!Project/*.pdf
 
 # Compressed archives
 *.zip
