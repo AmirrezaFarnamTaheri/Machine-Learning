@@ -50,7 +50,7 @@ Leveraging ImageNet pre-trained representations:
 
 ```text
 Project/
-├── Landscape_and_AI_Authenticity_Classification.ipynb  # Clean, desloped, reproducible notebook
+├── Landscape_and_AI_Authenticity_Classification.ipynb  # Clean, reproducible pipeline notebook
 ├── Machine Learning - Final Project.pdf                # Original assignment specification
 ├── train/                                              # Ground-truth images (jungle, mountain, sea)
 └── README.md                                           # Technical documentation
